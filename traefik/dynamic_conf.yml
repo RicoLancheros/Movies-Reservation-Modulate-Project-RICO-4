@@ -1,0 +1,32 @@
+http:
+  routers:
+    user-service:
+      rule: "PathPrefix(`/user`)"
+      service: user-service
+    movie-service:
+      rule: "PathPrefix(`/movie`)"
+      service: movie-service
+    showtime-service:
+      rule: "PathPrefix(`/showtime`)"
+      service: showtime-service
+    reservation-service:
+      rule: "PathPrefix(`/reservation`)"
+      service: reservation-service
+
+  services:
+    user-service:
+      loadBalancer:
+        servers:
+          - url: "http://localhost:8081"
+    movie-service:
+      loadBalancer:
+        servers:
+          - url: "http://localhost:8082"
+    showtime-service:
+      loadBalancer:
+        servers:
+          - url: "http://localhost:8083"
+    reservation-service:
+      loadBalancer:
+        servers:
+          - url: "http://localhost:8084"

@@ -1,0 +1,13 @@
+entryPoints:
+  web:
+    address: ":80"
+  websecure:
+    address: ":443"
+
+providers:
+  file:
+    filename: "D:\\Users\\Rico\\Desktop\\Juegos\\Movies-Reservation-Modulate-Project-RICO-4\\traefik\\dynamic_conf.yml"
+
+api:
+  dashboard: true
+  insecure: true
