@@ -1,7 +1,7 @@
 ##### Movies-Reservation-Modulate-Project-RICO-4 ####
+Documentacion oficial: https://docs.google.com/document/d/1JUhIOlM-0DiMORqc-D8FLigyKk22Tw-kuNnTXRryLVY/edit?usp=sharing
 
 #V0.0.0.1:#
-
 
 ---Iniciar Traefik dentro de Archivos de programa y Traefik---
 
