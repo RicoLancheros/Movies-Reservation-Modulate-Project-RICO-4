@@ -1,4 +1,4 @@
-package com.example.userservice.controller;
+package rico.user_service.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
