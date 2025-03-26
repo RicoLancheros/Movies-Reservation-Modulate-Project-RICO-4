@@ -2,9 +2,9 @@
 
 V0.0.0.1:
 
---Iniciar Traefik dentro de Archivos de programa y Traefik--
+--Iniciar Traefik dentro del archivo local de instalacion de  Traefik (CMD)--
 
-.\traefik.exe --configFile="Ruta"
+.\traefik.exe --configFile="Ruta del archivo traefik.yml"
 
 .\gradlew bootRun - a cada servicio para iniciarlo (Pruebas)
 
