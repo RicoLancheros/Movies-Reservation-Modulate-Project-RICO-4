@@ -1,15 +1,25 @@
 package rico.movie_service.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.*;
+import rico.movie_service.model.Movie;
+import rico.movie_service.service.MovieService;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/movie")
+@RequiredArgsConstructor
 public class MovieController {
+    private final MovieService movieService;
 
     @GetMapping("/")
-    public String helloUser() {
-        return "¡Hola desde el Movie Service!";
+    public List<Movie> getAllMovies() {
+        return movieService.getAllMovies();
+    }
+
+    @PostMapping("/")
+    public Movie createMovie(@RequestBody Movie movie) {
+        return movieService.createMovie(movie);
     }
 }

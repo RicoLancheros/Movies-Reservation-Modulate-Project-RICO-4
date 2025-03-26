@@ -1,15 +1,25 @@
 package rico.user_service.controller;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.RequiredArgsConstructor;
+import org.springframework.web.bind.annotation.*;
+import rico.user_service.model.User;
+import rico.user_service.service.UserService;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/user")
+@RequiredArgsConstructor
 public class UserController {
+    private final UserService userService;
 
     @GetMapping("/")
-    public String helloUser() {
-        return "¡Hola desde el User Service!";
+    public List<User> getAllUsers() {
+        return userService.getAllUsers();
+    }
+
+    @PostMapping("/")
+    public User createUser(@RequestBody User user) {
+        return userService.createUser(user);
     }
 }
