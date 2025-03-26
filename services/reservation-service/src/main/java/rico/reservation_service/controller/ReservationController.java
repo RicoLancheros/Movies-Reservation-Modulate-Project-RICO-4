@@ -1,16 +1,14 @@
-package rico.movie_service.controller;
+package rico.reservation_service.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
-@RequestMapping("/movie")
-public class UserController {
-
+@RequestMapping("/reservation")
+public class ReservationController {
     @GetMapping("/")
     public String helloUser() {
-        return "¡Hola desde Movie Service!";
+        return "¡Hola desde el Reservation Service!";
     }
 }
