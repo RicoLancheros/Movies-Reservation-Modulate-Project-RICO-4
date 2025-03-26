@@ -12,6 +12,10 @@ import java.util.List;
 public class ReservationService {
     private final ReservationRepository reservationRepository;
 
+    public List<Reservation> getAllReservations() {
+        return reservationRepository.findAll();
+    }
+
     public Reservation createReservation(Reservation reservation) {
         return reservationRepository.save(reservation);
     }

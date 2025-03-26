@@ -13,11 +13,19 @@ import java.util.List;
 public class ReservationController {
     private final ReservationService reservationService;
 
+    //Listar todas las reservas
+    @GetMapping("/")
+    public List<Reservation> getAllReservations() {
+        return reservationService.getAllReservations();
+    }
+
+    //Crear reserva
     @PostMapping("/")
     public Reservation createReservation(@RequestBody Reservation reservation) {
         return reservationService.createReservation(reservation);
     }
 
+    //Buscar por usuario
     @GetMapping("/user/{userId}")
     public List<Reservation> getReservationsByUser(@PathVariable String userId) {
         return reservationService.getReservationsByUser(userId);
