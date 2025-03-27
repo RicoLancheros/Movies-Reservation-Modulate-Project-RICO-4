@@ -11,7 +11,7 @@ import java.util.List;
 public class Reservation {
     @Id
     private String id;
-    private String userId;
+    private Long userId;
     private String showtimeId;
     private List<String> seats;    // Ej: ["A1", "A2"....]
     private String status;
