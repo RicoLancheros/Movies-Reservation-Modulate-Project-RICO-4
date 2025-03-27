@@ -1,8 +1,7 @@
 # Movies-Reservation-Modulate-Project-RICO-4
 
-#Developer Branch:
--Se crea una rama para cada desarrollador, la cual se fusiona con la rama principal,
-una vez que se ha completado el desarrollo de una funcionalidad.
+#Back-up V0.0.1.1 Branch:
+#Se crea backup de la rama V0.0.1.1#
 
 V0.0.1.1:
 #Proceso de Inicio#
