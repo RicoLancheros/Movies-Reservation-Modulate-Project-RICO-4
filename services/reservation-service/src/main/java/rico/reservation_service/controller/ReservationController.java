@@ -19,7 +19,6 @@ public class ReservationController {
         return reservationService.getAllReservations();
     }
 
-//   @GetMapping("/{id}")
     @PostMapping("/")
     public ResponseEntity<?> createReservation(@RequestBody Reservation reservation) {
         try {
